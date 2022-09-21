@@ -178,19 +178,22 @@ body, html {
     padding: 14px 16px;
     text-decoration: none;
     width: 10%;
-    padding: 15px;
     background-color: #7ab8ee;
-    height: 45px;
+    height: 110px;
   
 }
 
 
 
+
     </style>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       
+
+
             
             
       
@@ -233,8 +236,7 @@ body, html {
             <div class="header">
               <h2>Schedule</h2>
             </div>   
-                                   
-            
+                                    
             <div class="row">
               <div class="column">
                 <h3>Upper week</h3>
@@ -245,9 +247,7 @@ body, html {
                 <a href="Friday1.png">Friday</a>
                 <a href="Saturday12.png">Saturday</a>
               </div>
-              
-              
-              
+                        
               <div class="column">
                 <h3>Lower week</h3>
                 <a href="Monday12.png">Monday</a>
@@ -257,11 +257,7 @@ body, html {
                 <a href="Friday12.png">Friday</a>
                 <a href="Saturday12.png">Saturday</a>
               </div>
-             
-             
-             
-             
-             
+                                            
               <div class="column">
                 <h3>Substitutions</h3>
                 <a href="Today.png">Today</a>
@@ -271,55 +267,77 @@ body, html {
             </div>
           </div>
         </div> 
-        
-        <a href="Call2109.png">Call Schedule</a>
-       
-       
-       
-       
-      
 
-  </div>
-
-
+        <a href="Call2109.png">Call Schedule</a>           
+ </div>
        <br>
-  <div class="current_date_time_block1"
-  <div id="current_date_time_block"></div>
 
-  <script type="text/javascript">
-      
-      /* функция добавления ведущих нулей */
-      /* (если число меньше десяти, перед числом добавляем ноль) */
-      function zero_first_format(value)
-      {
-          if (value < 10)
-          {
-              value='0'+value;
-          }
-          return value;
-      }
-  
-      /* функция получения текущей даты и времени */
-      function date_time()
-      {
-          var current_datetime = new Date();
-          var day = zero_first_format(current_datetime.getDate());
-          var month = zero_first_format(current_datetime.getMonth()+1);
-          var year = current_datetime.getFullYear();
-          var hours = zero_first_format(current_datetime.getHours());
-          var minutes = zero_first_format(current_datetime.getMinutes());
-          var seconds = zero_first_format(current_datetime.getSeconds());
-  
-          return day+"."+month+"."+year+" "+hours+":"+minutes+":"+seconds;
-      }
-  
-      /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
-      document.getElementById('current_date_time_block').innerHTML = date_time();
-  </script>
 
+
+
+       
+       <div class="current_date_time_block1"
+       <p id="demo1"></p>
+       <script>
+         let day;
+         switch (new Date().getDay()) {
+           case 0:
+             day = "Sunday";
+             break;
+           case 1:
+             day = "Monday";
+             break;
+           case 2:
+             day = "Tuesday";
+             break;
+           case 3:
+             day = "Wednesday";
+             break;
+           case 4:
+             day = "Thursday";
+             break;
+           case 5:
+             day = "Friday";
+             break;
+           case  6:
+             day = "Saturday";
+         }
+         document.getElementById("demo1").innerHTML = "Today is " + day;
+         </script>
+         <br>
+
+
+
+<p>Time</p>
+<p id="demo"></p>
+</div>
+<br>
+<script>
+var myVar=setInterval(function(){myTimer()},);
+function myTimer(){
+    var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML=t;
+    var today = new Date().getHours();
+ 
+    if (today >=17  & today <= 19) {
+   document.body.style.background = "Green";
+} 
+else {
+    document.body.style.background = "yellow";
+}
+}
+
+</script>
 <br>
 
 
-</script>
+
+
+
+  
+
+
+
 </body>
 </html>   
