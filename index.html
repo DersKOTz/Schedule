@@ -281,9 +281,6 @@ body, html {
        <script>
          let day;
          switch (new Date().getDay()) {
-           case 0:
-             day = "Sunday";
-             break;
            case 1:
              day = "Monday";
              break;
@@ -301,8 +298,15 @@ body, html {
              break;
            case  6:
              day = "Saturday";
+             case 0:
+             day = "Sunday";
+             break;
          }
-         document.getElementById("demo1").innerHTML = "Today is " + day;
+
+             document.getElementById("demo1").innerHTML = "Today is " + day;
+
+
+         
          </script>
          <br>
 
@@ -320,22 +324,22 @@ function myTimer(){
     document.getElementById("demo").innerHTML=t;
     var today = new Date().getHours();
  
-    if (today >=17) {
-   document.body.style.background = "Green";
+    if (today >=19 && today <=19) {
+      document.getElementById('monday1').style.display = 'block';
 } 
-else {
-    document.body.style.background = "yellow";
-}
+if (today >=19 && today <=19) {
+  document.getElementById('Tuesday1').style.display = 'block';
+} 
 }
 
 </script>
+<img id="monday1" src="Monday1.png" style="display: none;"/>
+  <img id="Tuesday1" src="Tuesday1.png" style="display: none;"/>
+ 
+
+
 <br>
 
-
-
-
-
-  
 
 
 
