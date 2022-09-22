@@ -270,8 +270,7 @@ body, html {
 
         <a href="Call2109.png">Call Schedule</a>           
  </div>
-       <br>
-
+       
 
 
 
@@ -281,41 +280,38 @@ body, html {
        <script>
          let day;
          switch (new Date().getDay()) {
-           case 1:
-             day = "Monday";
-             break;
-           case 2:
-             day = "Tuesday";
-             break;
-           case 3:
-             day = "Wednesday";
-             break;
-           case 4:
-             day = "Thursday";
-             break;
-           case 5:
-             day = "Friday";
-             break;
-           case  6:
-             day = "Saturday";
-             case 0:
-             day = "Sunday";
-             break;
+         case 0:
+         day = "Sunday"; 
+         break;
+         case 1:
+         day = "Monday";
+         break;
+         case 2:
+         day = "Tuesday";
+         break;
+         case 3:
+         day = "Wednesday";
+         break;
+         case 4:
+         day = "Thursday";
+         break;
+         case 5:
+         day = "Friday";
+         break;
+         case  6:
+          day = "Saturday";
          }
-
-             document.getElementById("demo1").innerHTML = "Today is " + day;
-
-
-         
+         document.getElementById("demo1").innerHTML = "Today is " + day;               
          </script>
-         <br>
+        
+         
 
 
 
 <p>Time</p>
 <p id="demo"></p>
 </div>
-<br>
+
 <script>
 var myVar=setInterval(function(){myTimer()},);
 function myTimer(){
@@ -323,25 +319,55 @@ function myTimer(){
     var t=d.toLocaleTimeString();
     document.getElementById("demo").innerHTML=t;
     var today = new Date().getHours();
- 
-    if (today >=19 && today <=19) {
+    if (today >= 2400) {
       document.getElementById('monday1').style.display = 'block';
-} 
-if (today >=19 && today <=19) {
-  document.getElementById('Tuesday1').style.display = 'block';
 } 
 }
 
 </script>
 <img id="monday1" src="Monday1.png" style="display: none;"/>
-  <img id="Tuesday1" src="Tuesday1.png" style="display: none;"/>
- 
 
 
-<br>
+
+
+
+
+<p id="day2"></p>
+<script>
+var d = new Date();
+var n = d.getDay();
+ if( n == 0 )
+ document.body.style.background = "red";
+ else;
+ if( n == 1 )
+ document.body.style.background = "blue";
+ else;
+ if( n == 2 )
+ document.body.style.background = "green";
+ else;
+ if( n == 3 )
+ document.body.style.background = "yellow";
+ else;
+ if( n == 4 )
+ document.getElementById('monday11').style.display = 'block';
+ else;
+ if( n == 5 )
+ document.body.style.background = "orange";
+ else;
+ if( n == 6 )
+ document.body.style.background = "pink";
+ else;
+
+
+</script>
+</div>
+<img id="monday11" src="Monday12.png" width=100%  height=100% c/>
 
 
 
 
 </body>
 </html>   
+
+
+
