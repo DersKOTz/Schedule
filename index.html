@@ -183,9 +183,7 @@ body, html {
   
 }
 
-.thursday {
-  
-}
+
 
 
     </style>
@@ -321,7 +319,7 @@ function myTimer(){
     var t=d.toLocaleTimeString();
     document.getElementById("demo").innerHTML=t;
     var today = new Date().getHours();
-    if (today >= 2400) {
+    if (today >= 21113) {
       document.getElementById('monday1').style.display = 'block';
 } 
 }
@@ -329,7 +327,8 @@ function myTimer(){
 </script>
 <img id="monday1" src="Monday1.png" style="display: none;"/>
 
-<p id="day2"></p>
+
+
 <script>
 var d = new Date();
 var n = d.getDay();
@@ -357,11 +356,17 @@ var n = d.getDay();
 </script>
 
 
-<img id="thursday" src="Monday12.png" width=600  height=800 />
+<img id="monday1" src="Monday1.png" style="display: none;"/>
+<img id="tuesday" src="Monday1.png" style="display: none;"/>
+<img id="wednesday" src="Monday1.png" style="display: none;"/>
+<img id="thursday" src="Monday1.png" style="display: none;"/>
+<img id="friday" src="Monday1.png" style="display: none;"/>
+<img id="saturday" src="Monday1.png" style="display: none;"/>
+<br>
 
 
-<p id="day3"></p>
 <script>
+
 var d = new Date ();
 var n = d.getDay()+1;
 if( n == 0 )
@@ -387,7 +392,12 @@ if( n == 0 )
  else;
 </script>
 
-<img id="thursday" src="Thursday1.png" width=600  height=800 />
+<img id="monday" src="Monday12.png" style="display: none;"/>
+<img id="tuesday" src="Monday12.png" style="display: none;"/>
+<img id="wednesday" src="Monday12.png" style="display: none;"/>
+<img id="thursday" src="Monday12.png" style="display: none;"/>
+<img id="friday" src="Monday12.png" style="display: none;"/>
+<img id="saturday" src="Monday12.png" style="display: none;"/>
 
 </body>
 </html>   
