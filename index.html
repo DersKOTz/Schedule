@@ -313,41 +313,8 @@ function myTimer(){
     var today = new Date();     
     var hours=today.getHours();
     var minutes=today.getMinutes();
-
-if ( hours >= 8 && minutes >= 15)
-document.body.style.background = "red";
-else;
-if ( hours >= 9 && minutes >= 0)
-document.body.style.background = "turquoise";
-else;
-if ( hours >= 9 && minutes >= 5)
-document.body.style.background = "brown";
-else;
-if ( hours >= 9 && minutes >= 50)
-document.body.style.background = "orange";
-else;
-if ( hours >= 10 && minutes >= 10)
-document.body.style.background = "yellow";
-else;
-if ( hours >= 10 && minutes >= 55)
-document.body.style.background = "pink";
-else;
-if ( hours >= 11 && minutes >= 45)
-document.body.style.background = "lilac";
-else;
-if ( hours >= 12 && minutes >= 25)
-document.body.style.background = "grey";
-else;
-if ( hours >= 13 && minutes >= 10)
-document.body.style.background = "black";
-else;
-if ( hours >= 13 && minutes >= 15)
-document.body.style.background = "grey";
-else;
-if ( hours >= 14 && minutes >= 0)
-document.body.style.background = "green";
-else;
 }
+
 </script>
 
 <script>
@@ -374,8 +341,10 @@ else;
 <img id="friday12" src="Friday12.png" style="display: none;" width="400" height="400"/>
 <img id="saturday12" src="Saturday12.png" style="display: none;" width="400" height="400"/>
 
+
+<p id="demo122"></p>
 <script>
-  d0 = new Date(); 
+ d0 = new Date(); 
  d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
  d1 = new Date(); 
  dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
@@ -383,12 +352,19 @@ else;
  if(dt % 2) {
  var d = new Date();
  var n = d.getDay();
+ var d=new Date();
+ var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo122").innerHTML=t;
+    var today = new Date();     
+    var hours=today.getHours();
+    var minutes=today.getMinutes();
  if( n == 0 )
  document.getElementById('sunday1').style.display = 'inline';
  else;
  if( n == 1 )
  document.getElementById('monday1').style.display = 'inline';
- else;
+ else; 
  if( n == 2 )
  document.getElementById('tuesday1').style.display = 'inline';
  else;
@@ -399,15 +375,21 @@ else;
  document.getElementById('thursday1').style.display = 'inline';
  else;
  if( n == 5 )
- document.getElementById("friday1").style.display = 'inline';
+ document.getElementById("friday1").style.display = 'inline'; 
  else;
  if( n == 6 )
  document.getElementById('saturday12').style.display = 'inline';
- }
- 
+}
  else {
  var d = new Date();
  var n = d.getDay();
+ var d=new Date();
+ var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo122").innerHTML=t;
+    var today = new Date();     
+    var hours=today.getHours();
+    var minutes=today.getMinutes();
  if( n == 0 )
  document.getElementById('sunday12').style.display = 'inline';
  else;
@@ -425,7 +407,7 @@ else;
  else;
  if( n == 5 )
  document.getElementById("friday12").style.display = 'inline';
- else;
+ else; 
  if( n == 6 )
  document.getElementById('saturday12').style.display = 'inline';
  }
@@ -434,7 +416,7 @@ else;
 
 
 <script>
-  d0 = new Date(); 
+ d0 = new Date(); 
  d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
  d1 = new Date(); 
  dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
