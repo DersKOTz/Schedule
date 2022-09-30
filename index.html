@@ -179,7 +179,7 @@ body, html {
     text-decoration: none;
     width: 100%;
     background-color: #7ab8ee;
-    height: 110px;
+    height: 160px;
   
 }
 
@@ -272,10 +272,6 @@ body {
 
         <a href="Call2109.png">Call Schedule</a>           
  </div>
-       
-
-
-
 
        <div class="current_date_time_block1"
        <p id="demo1"></p>
@@ -306,92 +302,199 @@ body {
          document.getElementById("demo1").innerHTML = "Today is " + day;               
          </script>
         
+
 <p>Time</p>
 <p id="demo"></p>
-</div>
-
-<script>
-var myVar=setInterval(function(){myTimer()},);
+<script>var myVar=setInterval(function(){myTimer()},);
 function myTimer(){
     var d=new Date();
     var t=d.toLocaleTimeString();
     document.getElementById("demo").innerHTML=t;
-    var today = new Date().getHours();
-    if (today >= 21113) {
-      document.getElementById('monday1').style.display = 'block';
-} 
+    var today = new Date();     
+    var hours=today.getHours();
+    var minutes=today.getMinutes();
+
+if ( hours >= 8 && minutes >= 15)
+document.body.style.background = "red";
+else;
+if ( hours >= 9 && minutes >= 0)
+document.body.style.background = "turquoise";
+else;
+if ( hours >= 9 && minutes >= 5)
+document.body.style.background = "brown";
+else;
+if ( hours >= 9 && minutes >= 50)
+document.body.style.background = "orange";
+else;
+if ( hours >= 10 && minutes >= 10)
+document.body.style.background = "yellow";
+else;
+if ( hours >= 10 && minutes >= 55)
+document.body.style.background = "pink";
+else;
+if ( hours >= 11 && minutes >= 45)
+document.body.style.background = "lilac";
+else;
+if ( hours >= 12 && minutes >= 25)
+document.body.style.background = "grey";
+else;
+if ( hours >= 13 && minutes >= 10)
+document.body.style.background = "black";
+else;
+if ( hours >= 13 && minutes >= 15)
+document.body.style.background = "grey";
+else;
+if ( hours >= 14 && minutes >= 0)
+document.body.style.background = "green";
+else;
 }
 </script>
 
-
-
-<img id="monday" src="Monday12.png" style="display: none;" width="400" height="400"/>
-<img id="tuesday" src="Tuesday12.png" style="display: none;" width="400" height="400"/>
-<img id="wednesday" src="Wednesday12.png" style="display: none;" width="400" height="400"/>
-<img id="thursday" src="Thursday12.png" style="display: none;" width="400" height="400"/>
-<img id="friday" src="Friday12.png" style="display: none;" width="400" height="400"/>
-<img id="saturday" src="Saturday12.png" style="display: none;" width="400" height="400"/>
 <script>
-  var d = new Date();
-  var n = d.getDay();
-   if( n == 0 )
-   document.getElementById('sunday').style.display = 'inline';
-   else;
-   if( n == 1 )
-   document.getElementById('monday').style.display = 'inline';
-   else;
-   if( n == 2 )
-   document.getElementById('tuesday').style.display = 'inline';
-   else;
-   if( n == 3 )
-   document.getElementById('wednesday').style.display = 'inline';
-   else;
-   if( n == 4 )
-   document.getElementById('thursday').style.display = 'inline';
-   else;
-   if( n == 5 )
-   document.getElementById("friday").style.display = 'inline';
-   else;
-   if( n == 6 )
-   document.getElementById('saturday').style.display = 'inline';
-  </script>
-  <br>
+  d0 = new Date(); 
+ d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
+ d1 = new Date(); 
+ dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
+ if(dt % 2) document.write('Upper week'); 
+ else document.write('Lower week'); 
+ </script>
+</div>
+<br>
 
+<img id="monday1" src="Monday1.png" style="display: none;" width="400" height="400"/>
+<img id="tuesday1" src="Tuesday1.png" style="display: none;" width="400" height="400"/>
+<img id="wednesday1" src="Wednesday1.png" style="display: none;" width="400" height="400"/>
+<img id="thursday1" src="Thursday1.png" style="display: none;" width="400" height="400"/>
+<img id="friday1" src="Friday1.png" style="display: none;" width="400" height="400"/>
+<img id="saturday1" src="Saturday12.png" style="display: none;" width="400" height="400"/>
+<img id="monday12" src="Monday12.png" style="display: none;" width="400" height="400"/>
+<img id="tuesday12" src="Tuesday12.png" style="display: none;" width="400" height="400"/>
+<img id="wednesday12" src="Wednesday12.png" style="display: none;" width="400" height="400"/>
+<img id="thursday12" src="Thursday12.png" style="display: none;" width="400" height="400"/>
+<img id="friday12" src="Friday12.png" style="display: none;" width="400" height="400"/>
+<img id="saturday12" src="Saturday12.png" style="display: none;" width="400" height="400"/>
 
-
-<img id="monday" src="Monday12.png" style="display: none;" width="400" height="400"/>
-<img id="tuesday" src="Tuesday12.png" style="display: none;" width="400" height="400"/>
-<img id="wednesday" src="Wednesday12.png" style="display: none;" width="400" height="400"/>
-<img id="thursday" src="Thursday12.png" style="display: none;" width="400" height="400"/>
-<img id="friday" src="Friday12.png" style="display: none;" width="400" height="400"/>
-<img id="saturday" src="Saturday12.png" style="display: none;" width="400" height="400"/>
 <script>
-  var d = new Date();
-  var n = d.getDay()+1;
-   if( n == 0 )
-   document.getElementById('sunday').style.display = 'inline';
-   else;
-   if( n == 1 )
-   document.getElementById('monday').style.display = 'inline';
-   else;
-   if( n == 2 )
-   document.getElementById('tuesday').style.display = 'inline';
-   else;
-   if( n == 3 )
-   document.getElementById('wednesday').style.display = 'inline';
-   else;
-   if( n == 4 )
-   document.getElementById('thursday').style.display = 'inline';
-   else;
-   if( n == 5 )
-   document.getElementById("friday").style.display = 'inline';
-   else;
-   if( n == 6 )
-   document.getElementById('saturday').style.display = 'inline';
-  </script>
+  d0 = new Date(); 
+ d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
+ d1 = new Date(); 
+ dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
+ 
+ if(dt % 2) {
+ var d = new Date();
+ var n = d.getDay();
+ if( n == 0 )
+ document.getElementById('sunday1').style.display = 'inline';
+ else;
+ if( n == 1 )
+ document.getElementById('monday1').style.display = 'inline';
+ else;
+ if( n == 2 )
+ document.getElementById('tuesday1').style.display = 'inline';
+ else;
+ if( n == 3 )
+ document.getElementById('wednesday1').style.display = 'inline';
+ else;
+ if( n == 4 )
+ document.getElementById('thursday1').style.display = 'inline';
+ else;
+ if( n == 5 )
+ document.getElementById("friday1").style.display = 'inline';
+ else;
+ if( n == 6 )
+ document.getElementById('saturday12').style.display = 'inline';
+ }
+ 
+ else {
+ var d = new Date();
+ var n = d.getDay();
+ if( n == 0 )
+ document.getElementById('sunday12').style.display = 'inline';
+ else;
+ if( n == 1 )
+ document.getElementById('monday12').style.display = 'inline';
+ else;
+ if( n == 2 )
+ document.getElementById('tuesday12').style.display = 'inline';
+ else;
+ if( n == 3 )
+ document.getElementById('wednesday12').style.display = 'inline';
+ else;
+ if( n == 4 )
+ document.getElementById('thursday12').style.display = 'inline';
+ else;
+ if( n == 5 )
+ document.getElementById("friday12").style.display = 'inline';
+ else;
+ if( n == 6 )
+ document.getElementById('saturday12').style.display = 'inline';
+ }
+ </script>
+<br>
+
+
+<script>
+  d0 = new Date(); 
+ d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
+ d1 = new Date(); 
+ dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
+ 
+ if(dt % 2) {
+ var d = new Date();
+ var n = d.getDay()+1;
+ if( n == 0 )
+ document.getElementById('sunday1').style.display = 'inline';
+ else;
+ if( n == 1 )
+ document.getElementById('monday1').style.display = 'inline';
+ else;
+ if( n == 2 )
+ document.getElementById('tuesday1').style.display = 'inline';
+ else;
+ if( n == 3 )
+ document.getElementById('wednesday1').style.display = 'inline';
+ else;
+ if( n == 4 )
+ document.getElementById('thursday1').style.display = 'inline';
+ else;
+ if( n == 5 )
+ document.getElementById("friday1").style.display = 'inline';
+ else;
+ if( n == 6 )
+ document.getElementById('saturday12').style.display = 'inline';
+ }
+ else {
+ var d = new Date();
+ var n = d.getDay()+1;
+ if( n == 0 )
+ document.getElementById('sunday12').style.display = 'inline';
+ else;
+ if( n == 1 )
+ document.getElementById('monday12').style.display = 'inline';
+ else;
+ if( n == 2 )
+ document.getElementById('tuesday12').style.display = 'inline';
+ else;
+ if( n == 3 )
+ document.getElementById('wednesday12').style.display = 'inline';
+ else;
+ if( n == 4 )
+ document.getElementById('thursday12').style.display = 'inline';
+ else;
+ if( n == 5 )
+ document.getElementById("friday12").style.display = 'inline';
+ else;
+ if( n == 6 )
+ document.getElementById('saturday12').style.display = 'inline';
+ }
+ </script>
   <br>
   
 
+  
+    
+
+    
 </body>
 </html>   
 
