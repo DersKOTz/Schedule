@@ -1,0 +1,180 @@
+<style>
+       
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #7ab8ee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #5ea8e9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px ;
+    z-index: 1;
+}
+
+
+.dropdown-content .header {
+    background: #5ea8e9;
+    padding: 13px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    color: white;
+    width: 33.33%;
+    padding: 15px;
+    background-color: #7ab8ee;
+    height: 400px;
+}
+.column2 {
+    float: left;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    background-color: #7ab8ee;
+    height: 420px;
+}
+.column3 {
+    float: left;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    background-color: #7ab8ee;
+    height: 300px;
+}
+
+.column3 a {
+    float: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a {
+    float: none;
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #7ab8ee;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+.timeset  {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-telegram {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-VK {
+  background: #3B5998;
+  color: white;
+}
+
+.current_date_time_block1 {
+ 
+    font-size: px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+    background-color: #7ab8ee;
+    height: 160px;
+  
+}
+
+body {
+    background: #7ab8ee;
+   }
+
+
+    </style>
