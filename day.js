@@ -16,7 +16,7 @@ d0 = new Date();
     console.log (hours,"Час дня");
     console.log (minutes,"Минута");
 if( n == 0 ) 
- document.getElementById('sunday1').style.display = 'inline';
+ document.getElementById('sunday12').style.display = 'inline';
  else;
  if( n == 1 ) {
  document.getElementById('monday1').style.display = 'inline';

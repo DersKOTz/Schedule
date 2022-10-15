@@ -7,10 +7,7 @@ d0 = new Date();
  var d = new Date();
  var n = d.getDay()+1;
  if( n == 0 )
- document.getElementById('sunday1').style.display = 'inline';
- else;
- if( n == 1 )
- document.getElementById('monday1').style.display = 'inline';
+ document.getElementById('sunday12').style.display = 'inline';
  else;
  if( n == 2 )
  document.getElementById('tuesday1').style.display = 'inline';
@@ -32,9 +29,6 @@ d0 = new Date();
  var n = d.getDay()+1;
  if( n == 0 )
  document.getElementById('sunday12').style.display = 'inline';
- else;
- if( n == 1 )
- document.getElementById('monday12').style.display = 'inline';
  else;
  if( n == 2 )
  document.getElementById('tuesday12').style.display = 'inline';
