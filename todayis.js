@@ -22,3 +22,4 @@ let day;
           day = "Saturday";
          }
          document.getElementById("demo1").innerHTML = "Today is " + day;               
+         console.log (day,"День");

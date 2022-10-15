@@ -1,6 +1,10 @@
-d0 = new Date(); 
-d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
-d1 = new Date(); 
-dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
-if(dt % 2) document.write('Upper week'); 
+Date.prototype.getWeek = function() {
+    var onejan = new Date(this.getFullYear(), 0, 1);
+    return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+}
+
+var weekNumber = (new Date()).getWeek();
+console.log (weekNumber,"Неделя");
+if (weekNumber % 2) 
+document.write('Upper week'); 
 else document.write('Lower week'); 

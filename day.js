@@ -12,6 +12,9 @@ d0 = new Date();
     var today = new Date();     
     var hours=today.getHours();
     var minutes=today.getMinutes();
+    console.log (n,"День недели");
+    console.log (hours,"Час дня");
+    console.log (minutes,"Минута");
 if( n == 0 ) 
  document.getElementById('sunday1').style.display = 'inline';
  else;
