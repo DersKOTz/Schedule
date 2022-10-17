@@ -23,7 +23,7 @@ if( n == 0 )
  if( n == 1 ) {
  document.getElementById('monday1').style.display = 'inline';
  if ( hours >= 16 && minutes >= 20)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 35)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 15 && minutes >= 30)
@@ -59,7 +59,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 2 ) {
  document.getElementById('tuesday1').style.display = 'inline';
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -95,7 +95,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 3 ) {
  document.getElementById('wednesday1').style.display = 'inline';
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -131,7 +131,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 4 ) {
  document.getElementById('thursday1').style.display = 'inline'; 
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -167,7 +167,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 5 ) {
  document.getElementById("friday1").style.display = 'inline'; 
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -203,7 +203,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 6 ) {
  document.getElementById('saturday12').style.display = 'inline';
  if ( hours >= 14 && minutes >= 25)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 13 && minutes >= 45)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 13 && minutes >= 40)
@@ -252,7 +252,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 1 ) {
  document.getElementById('monday12').style.display = 'inline';
  if ( hours >= 16 && minutes >= 20)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 35)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 15 && minutes >= 30)
@@ -288,7 +288,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 2 ) {
  document.getElementById('tuesday12').style.display = 'inline';
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -324,9 +324,9 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 3 ) {
  document.getElementById('wednesday12').style.display = 'inline';
 if ( hours >= 15 && minutes >= 46)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -362,7 +362,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 4 ) {
  document.getElementById('thursday12').style.display = 'inline';
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -398,7 +398,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 5 ) {
  document.getElementById("friday12").style.display = 'inline';
  if ( hours >= 15 && minutes >= 45)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 15 && minutes >= 0)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 14 && minutes >= 55)
@@ -434,7 +434,7 @@ document.write("Сейчас идёт 1 пара (1 час)");
  if( n == 6 ) {
  document.getElementById('saturday12').style.display = 'inline';
  if ( hours >= 14 && minutes >= 25)
-document.write("4 пара кончилась");
+document.write("Кончилась 4 пара");
 else if ( hours >= 13 && minutes >= 45)
 document.write("Сейчас идёт 4 пара (2 час)");
 else if ( hours >= 13 && minutes >= 40)
