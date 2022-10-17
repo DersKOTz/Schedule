@@ -1,3 +1,4 @@
+
 <style>
        
  {
@@ -67,7 +68,7 @@ body {
 .column {
     float: left;
     color: white;
-    width: 50%;
+    width: 33.33%;
     padding: 15px;
     background-color: #7ab8ee;
     height: 400px;
@@ -175,6 +176,5 @@ body, html {
 body {
     background: #7ab8ee;
    }
-
 
     </style>

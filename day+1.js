@@ -1,9 +1,10 @@
-d0 = new Date(); 
- d0.setFullYear((new Date()).getMonth() < 9 ? (new Date()).getFullYear() - 1 : (new Date()).getFullYear(), 8, 1); 
- d1 = new Date(); 
- dt = Math.floor(((d1.getTime() - d0.getTime() + 1000*60*60*24) / (1000*60*60*24*7)) + 1); 
- 
- if(dt % 2) {
+Date.prototype.getWeek = function() {
+    var onejan = new Date(this.getFullYear(), 0, 1);
+    return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() - 2) / 7);
+}
+
+var weekNumber = (new Date()).getWeek();
+if (weekNumber % 2)  {
  var d = new Date();
  var n = d.getDay()+1;
  if( n == 0 )
