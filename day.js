@@ -15,6 +15,7 @@ var d = new Date();
     console.log (minutes,"Минута");
 
 var weekNumber = (new Date()).getWeek();
+
 if (weekNumber % 2) {
 
 if( n == 0 ) 

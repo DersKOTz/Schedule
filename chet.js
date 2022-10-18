@@ -6,7 +6,8 @@ var d = new Date();
 var n = d.getDay();
 var weekNumber = (new Date()).getWeek();
 console.log (weekNumber,"Неделя");
-if (weekNumber % 2) 
+var wn = (weekNumber % 2);
+if (wn == 1)
 document.write('Upper week'); 
-else
+if (wn == 0)
 document.write('Lower week'); 

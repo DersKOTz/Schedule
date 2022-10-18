@@ -5,11 +5,14 @@ Date.prototype.getWeek = function() {
 var d = new Date();
 var n = d.getDay();
 var weekNumber = (new Date()).getWeek();
-if (weekNumber % 2) {
+var wn = (weekNumber % 2);
+if (wn == 1) {
 if( n == 0 )
 document.getElementById('Monday12').style.display = 'inline';
 }
 else {
+if (wn == 0){
 if( n == 0 )
 document.getElementById('Monday1').style.display = 'inline';
+}
 }
