@@ -1,6 +1,6 @@
 Date.prototype.getWeek = function() {
     var onejan = new Date(this.getFullYear(), 0, 1);
-    return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() - 2) / 7);
+    return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() - 8) / 7);
 }
 
 var weekNumber = (new Date()).getWeek();
