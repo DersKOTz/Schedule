@@ -301,12 +301,10 @@ var d=new Date();
       }
       else if ( hours >= 8 && minutes >= 55) {
       document.write("Перемена (5 мин)");
-      document.getElementById('anglSl').style="outline: 3px solid orange";
       document.getElementById('anglSu').style="outline: 3px solid orange";
       }
       else if ( hours >= 8 && minutes >= 15) {
       document.write("Сейчас идёт 1 пара (1 час)");
-      document.getElementById('anglSl').style="outline: 3px solid red";
       document.getElementById('anglSu').style="outline: 3px solid red";
       }
       else if ( hours >= 1 && minutes >= 0)
