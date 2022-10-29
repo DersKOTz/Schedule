@@ -26,7 +26,7 @@ var d=new Date();
       document.getElementById('it0.5Weu').style="outline: 3px solid red";
       }
       else if ( hours >= 14 && minutes >= 55) {
-      document.write("Перемена5");
+      document.write("Перемена (5 мин)");
       document.getElementById('it0.5Weu').style="outline: 3px solid orange";
       }
       else if ( hours >= 14 && minutes >= 10) {
@@ -34,7 +34,7 @@ var d=new Date();
       document.getElementById('it0.5Weu').style="outline: 3px solid red";
       }
       else if ( hours >= 14 && minutes >= 0) {
-      document.write("Перемена4")
+      document.write("Перемена (10 мин)")
       document.getElementById('it0.5Weu').style="outline: 3px solid yellow";
       }
       else if ( hours >= 13 && minutes >= 15) {
@@ -48,7 +48,7 @@ var d=new Date();
       document.getElementById('sstdFl').style="outline: 3px solid red";
       }
       else if ( hours >= 13 && minutes >= 10) {
-      document.write("Перемена3");
+      document.write("Перемена (5 мин)");
       document.getElementById('psihTu').style="outline: 3px solid orange";
       document.getElementById('evmWeu').style="outline: 3px solid orange";
       document.getElementById('psihThu').style="outline: 3px solid orange";
@@ -89,7 +89,7 @@ var d=new Date();
       document.getElementById('algFl2').style="outline: 3px solid red";
       }
       else if ( hours >= 10 && minutes >= 55) {
-      document.write("Перемена2");
+      document.write("Перемена (5 мин)");
       document.getElementById('discmatTu').style="outline: 3px solid orange";
       document.getElementById('sstdWeu').style="outline: 3px solid orange";
       document.getElementById('historyThu').style="outline: 3px solid orange";
@@ -133,7 +133,7 @@ var d=new Date();
       document.getElementById('algFl').style="outline: 3px solid red";
       }
       else if ( hours >= 9 && minutes >= 0) {
-      document.write("Перемена1");
+      document.write("Перемена (5 мин)");
       document.getElementById('ksTu').style="outline: 3px solid orange";
       document.getElementById('itWeu').style="outline: 3px solid orange";
       document.getElementById('ksThu').style="outline: 3px solid orange";
@@ -170,7 +170,7 @@ var d=new Date();
       document.getElementById('discmatMu').style="outline: 3px solid red";
       }
       else if ( hours >= 15 && minutes >= 30) {
-      document.write("Перемена5");
+      document.write("Перемена (5 мин)");
       document.getElementById('discmatMu').style="outline: 3px solid orange";
       }
       else if ( hours >= 14 && minutes >= 45) {
@@ -178,7 +178,7 @@ var d=new Date();
       document.getElementById('discmatMu').style="outline: 3px solid red";
       }
       else if ( hours >= 14 && minutes >= 35) {
-      document.write("Перемена4")
+      document.write("Перемена (10 мин)")
       document.getElementById('discmatMu').style="outline: 3px solid yellow";
       }
       else if ( hours >= 13 && minutes >= 50) {
@@ -187,7 +187,7 @@ var d=new Date();
       document.getElementById('filosofMu').style="outline: 3px solid yellow";
       }
       else if ( hours >= 13 && minutes >= 45) {
-      document.write("Перемена3");
+      document.write("Перемена (5 мин)");
       document.getElementById('filosofMl').style="outline: 3px solid orange";
       document.getElementById('filosofMu').style="outline: 3px solid orange";
       }
@@ -207,7 +207,7 @@ var d=new Date();
       document.getElementById('historyMu').style="outline: 3px solid red";
       }
       else if ( hours >= 11 && minutes >= 30) {
-      document.write("Перемена2");
+      document.write("Перемена (5 мин)");
       document.getElementById('historyMl').style="outline: 3px solid orange";
       document.getElementById('historyMu').style="outline: 3px solid orange";
       }
@@ -227,7 +227,7 @@ var d=new Date();
       document.getElementById('fizraMu').style="outline: 3px solid red";
       }
       else if ( hours >= 9 && minutes >= 35) {
-      document.write("Перемена1");
+      document.write("Перемена (5 мин)");
       document.getElementById('fizraMl').style="outline: 3px solid orange";
       document.getElementById('fizraMu').style="outline: 3px solid orange";
       }
@@ -249,18 +249,18 @@ var d=new Date();
       else if ( hours >= 13 && minutes >= 45)
       document.write("Сейчас идёт 4 пара (2 час)");
       else if ( hours >= 13 && minutes >= 40)
-      document.write("Перемена7");
+      document.write("Перемена (5 мин)");
       else if ( hours >= 13 && minutes >= 0)
       document.write("Сейчас идёт 4 пара (1 час)");
       else if ( hours >= 12 && minutes >= 50)
-      document.write("Перемена6")
+      document.write("Перемена (10 мин)")
       else if ( hours >= 12 && minutes >= 10) {
       document.write("Сейчас идёт 3 пара (2 час)");
       document.getElementById('archSl').style="outline: 3px solid red";
       document.getElementById('archSu').style="outline: 3px solid red";
       }
       else if ( hours >= 12 && minutes >= 5) {
-      document.write("Перемена5");
+      document.write("Перемена (5 мин)");
       document.getElementById('archSl2').style="outline: 3px solid orange";
       document.getElementById('archSu2').style="outline: 3px solid orange";
       }
@@ -270,7 +270,7 @@ var d=new Date();
       document.getElementById('archSu2').style="outline: 3px solid red";
       }
       else if ( hours >= 11 && minutes >= 15) {
-      document.write("Перемена4");
+      document.write("Перемена (10 мин)");
       document.getElementById('archSl2').style="outline: 3px solid yellow";
       document.getElementById('archSu2').style="outline: 3px solid yellow";
       }
@@ -280,7 +280,7 @@ var d=new Date();
       document.getElementById('archSu').style="outline: 3px solid red";
       }
       else if ( hours >= 10 && minutes >= 30) {
-      document.write("Перемена3");
+      document.write("Перемена (5 мин)");
       document.getElementById('archSl').style="outline: 3px solid orange";
       document.getElementById('archSu').style="outline: 3px solid orange";
       }
@@ -290,7 +290,7 @@ var d=new Date();
       document.getElementById('archSu').style="outline: 3px solid red";
       }
       else if ( hours >= 9 && minutes >= 40) {
-      document.write("Перемена2");
+      document.write("Перемена (10 мин)");
       document.getElementById('archSl').style="outline: 3px solid yellow";
       document.getElementById('archSu').style="outline: 3px solid yellow";
       }
@@ -300,7 +300,7 @@ var d=new Date();
       document.getElementById('anglSu').style="outline: 3px solid red";
       }
       else if ( hours >= 8 && minutes >= 55) {
-      document.write("Перемена1");
+      document.write("Перемена (5 мин)");
       document.getElementById('anglSl').style="outline: 3px solid orange";
       document.getElementById('anglSu').style="outline: 3px solid orange";
       }
