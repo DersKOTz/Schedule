@@ -98,73 +98,99 @@ if (n == 1) {
   }
   else if ( hours >= 15 && minutes >= 35) {
   document.write("Сейчас идёт 4 пара (2 час)");
+  if (wn == 1)
   document.getElementById('discmatMu').style="outline: 3px solid red";
   }
   else if ( hours >= 15 && minutes >= 30) {
   document.write("Перемена (5 мин)");
+  if (wn == 1) 
   document.getElementById('discmatMu').style="outline: 3px solid orange";
   }
   else if ( hours >= 14 && minutes >= 45) {
   document.write("Сейчас идёт 4 пара (1 час)");
+  if (wn == 1) 
   document.getElementById('discmatMu').style="outline: 3px solid red";
   }
   else if ( hours >= 14 && minutes >= 35) {
   document.write("Перемена (10 мин)")
+  if (wn == 1) 
   document.getElementById('discmatMu').style="outline: 3px solid yellow";
   }
   else if ( hours >= 13 && minutes >= 50) {
   document.write("Сейчас идёт 3 пара (2 час)");
+  if (wn == 0)
   document.getElementById('filosofMl').style="outline: 3px solid yellow";
+  else if (wn == 1) 
   document.getElementById('filosofMu').style="outline: 3px solid yellow";
   }
   else if ( hours >= 13 && minutes >= 45) {
   document.write("Перемена (5 мин)");
+  if (wn == 0)
   document.getElementById('filosofMl').style="outline: 3px solid orange";
+  else if (wn == 1)
   document.getElementById('filosofMu').style="outline: 3px solid orange";
   }
   else if ( hours >= 13 && minutes >= 0) {
   document.write("Сейчас идёт 3 пара (1 час)");
+  if (wn == 0)
   document.getElementById('filosofMl').style="outline: 3px solid red";
+  else if (wn == 1)
   document.getElementById('filosofMu').style="outline: 3px solid red";
   }
   else if ( hours >= 12 && minutes >= 20) {
   document.write("Обед");
+  if (wn == 0)
   document.getElementById('filosofMl').style="outline: 3px solid yellow";
+  else if (wn == 1)
   document.getElementById('filosofMu').style="outline: 3px solid yellow";
   }
   else if ( hours >= 11 && minutes >= 35) {
   document.write("Сейчас идёт 2 пара (2 час)");
+  if (wn == 0)
   document.getElementById('historyMl').style="outline: 3px solid red";
+  else if (wn == 1)
   document.getElementById('historyMu').style="outline: 3px solid red";
   }
   else if ( hours >= 11 && minutes >= 30) {
   document.write("Перемена (5 мин)");
+  if (wn == 0)
   document.getElementById('historyMl').style="outline: 3px solid orange";
+  else if (wn == 1)
   document.getElementById('historyMu').style="outline: 3px solid orange";
   }
   else if ( hours >= 10 && minutes >= 45) {
   document.write("Сейчас идёт 2 пара (1 час)");
+  if (wn == 0)
   document.getElementById('historyMl').style="outline: 3px solid red";
+  else if (wn == 1)
   document.getElementById('historyMu').style="outline: 3px solid red";
   }
   else if ( hours >= 10 && minutes >= 25) {
   document.write("Завтрак");
+  if (wn == 0)
   document.getElementById('historyMl').style="outline: 3px solid yellow";
+  else if (wn == 1)
   document.getElementById('historyMu').style="outline: 3px solid yellow";
   }
   else if ( hours >= 9 && minutes >= 40) {
   document.write("Сейчас идёт 1 пара (2 час)");
+  if (wn == 0)
   document.getElementById('fizraMl').style="outline: 3px solid red";
+  else if (wn == 1)
   document.getElementById('fizraMu').style="outline: 3px solid red";
   }
   else if ( hours >= 9 && minutes >= 35) {
   document.write("Перемена (5 мин)");
+  if (wn == 0)
   document.getElementById('fizraMl').style="outline: 3px solid orange";
+  else if (wn == 1)
   document.getElementById('fizraMu').style="outline: 3px solid orange";
   }
   else if ( hours >= 8 && minutes >= 50) {
   document.write("Сейчас идёт 1 пара (1 час)"); 
+  if (wn == 0)
   document.getElementById('fizraMl').style="outline: 3px solid red";
+  else if (wn == 1)
   document.getElementById('fizraMu').style="outline: 3px solid red";
   }
  }
@@ -178,136 +204,184 @@ if (n == 2 || n == 3 || n == 4 || n == 5) {
   }
   else if ( hours >= 15 && minutes >= 0) {
   document.write("Сейчас идёт 4 пара (2 час)");
+  if (wn == 1)
   document.getElementById('it0.5Weu').style="outline: 3px solid red";
   }
   else if ( hours >= 14 && minutes >= 55) {
   document.write("Перемена (5 мин)");
+  if (wn == 1)
   document.getElementById('it0.5Weu').style="outline: 3px solid orange";
   }
   else if ( hours >= 14 && minutes >= 10) {
   document.write("Сейчас идёт 4 пара (1 час)");
+  if (wn == 1)
   document.getElementById('it0.5Weu').style="outline: 3px solid red";
   }
   else if ( hours >= 14 && minutes >= 0) {
   document.write("Перемена (10 мин)")
+  if (wn == 1)
   document.getElementById('it0.5Weu').style="outline: 3px solid yellow";
   }
   else if ( hours >= 13 && minutes >= 15) {
   document.write("Сейчас идёт 3 пара (2 час)");
+  if (wn == 1) {
   document.getElementById('psihTu').style="outline: 3px solid red";
   document.getElementById('evmWeu').style="outline: 3px solid red";
   document.getElementById('psihThu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('evmTl').style="outline: 3px solid red";
   document.getElementById('evmWl').style="outline: 3px solid red";
   document.getElementById('filosofThl').style="outline: 3px solid red";
   document.getElementById('sstdFl').style="outline: 3px solid red";
   }
+  }
   else if ( hours >= 13 && minutes >= 10) {
   document.write("Перемена (5 мин)");
+  if (wn == 1) {
   document.getElementById('psihTu').style="outline: 3px solid orange";
   document.getElementById('evmWeu').style="outline: 3px solid orange";
   document.getElementById('psihThu').style="outline: 3px solid orange";
+  }
+  else if (wn == 0) {
   document.getElementById('evmTl').style="outline: 3px solid orange";
   document.getElementById('evmWl').style="outline: 3px solid orange";
   document.getElementById('filosofThl').style="outline: 3px solid orange";
   document.getElementById('sstdFl').style="outline: 3px solid orange";
   }
+  }
   else if ( hours >= 12 && minutes >= 25) {
   document.write("Сейчас идёт 3 пара (1 час)");
+  if (wn == 1) {
   document.getElementById('psihTu').style="outline: 3px solid red";
   document.getElementById('evmWeu').style="outline: 3px solid red";
   document.getElementById('psihThu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('evmTl').style="outline: 3px solid red";
   document.getElementById('evmWl').style="outline: 3px solid red";
   document.getElementById('filosofThl').style="outline: 3px solid red";
   document.getElementById('sstdFl').style="outline: 3px solid red";
   }
+  }
   else if ( hours >= 11 && minutes >= 45) {
   document.write("Обед");
+  if (wn == 1) {
   document.getElementById('psihTu').style="outline: 3px solid yellow";
   document.getElementById('evmWeu').style="outline: 3px solid yellow";
   document.getElementById('psihThu').style="outline: 3px solid yellow";
+  }
+  else if (wn == 0) {
   document.getElementById('evmTl').style="outline: 3px solid yellow";
   document.getElementById('evmWl').style="outline: 3px solid yellow";
   document.getElementById('filosofThl').style="outline: 3px solid yellow";
   document.getElementById('sstdFl').style="outline: 3px solid yellow";
   }
+  }
   else if ( hours >= 11 && minutes >= 0) {
   document.write("Сейчас идёт 2 пара (2 час)");
+  if (wn == 1) {
   document.getElementById('discmatTu').style="outline: 3px solid red";
   document.getElementById('sstdWeu').style="outline: 3px solid red";
   document.getElementById('historyThu').style="outline: 3px solid red";
   document.getElementById('psihFu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('discmatTl').style="outline: 3px solid red";
   document.getElementById('itWl2').style="outline: 3px solid red";
   document.getElementById('algThl2').style="outline: 3px solid red";
   document.getElementById('algFl2').style="outline: 3px solid red";
   }
+  }
   else if ( hours >= 10 && minutes >= 55) {
   document.write("Перемена (5 мин)");
+  if (wn == 1) {
   document.getElementById('discmatTu').style="outline: 3px solid orange";
   document.getElementById('sstdWeu').style="outline: 3px solid orange";
   document.getElementById('historyThu').style="outline: 3px solid orange";
   document.getElementById('psihFu').style="outline: 3px solid orange";
+  }
+  else if (wn == 0) {
   document.getElementById('discmatTl').style="outline: 3px solid orange";
   document.getElementById('itWl2').style="outline: 3px solid orange";
   document.getElementById('algThl2').style="outline: 3px solid orange";
   document.getElementById('algFl2').style="outline: 3px solid orange";
   }
+  }
   else if ( hours >= 10 && minutes >= 10) {
   document.write("Сейчас идёт 2 пара (1 час)");
+  if (wn == 1) {
   document.getElementById('discmatTu').style="outline: 3px solid red";
   document.getElementById('sstdWeu').style="outline: 3px solid red";
   document.getElementById('historyThu').style="outline: 3px solid red";
   document.getElementById('psihFu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('discmatTl').style="outline: 3px solid red";
   document.getElementById('itWl2').style="outline: 3px solid red";
   document.getElementById('algThl2').style="outline: 3px solid red";
   document.getElementById('algFl2').style="outline: 3px solid red";
   }
+  }
   else if ( hours >= 9 && minutes >= 50) {
   document.write("Завтрак");
+  if (wn == 1) {
   document.getElementById('discmatTu').style="outline: 3px solid yellow";
   document.getElementById('sstdWeu').style="outline: 3px solid yellow";
   document.getElementById('historyThu').style="outline: 3px solid yellow";
   document.getElementById('psihFu').style="outline: 3px solid yellow";
+  }
+  else if (wn == 0) {
   document.getElementById('discmatTl').style="outline: 3px solid yellow";
   document.getElementById('itWl2').style="outline: 3px solid yellow";
   document.getElementById('algThl2').style="outline: 3px solid yellow";
   document.getElementById('algFl2').style="outline: 3px solid yellow";
   }
+  }
   else if ( hours >= 9 && minutes >= 5) {
   document.write("Сейчас идёт 1 пара (2 час)");
+  if (wn == 1) {
   document.getElementById('ksTu').style="outline: 3px solid red";
   document.getElementById('itWeu').style="outline: 3px solid red";
   document.getElementById('ksThu').style="outline: 3px solid red";
   document.getElementById('algFu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('ksTl').style="outline: 3px solid red";
   document.getElementById('itWl').style="outline: 3px solid red";
   document.getElementById('algThl').style="outline: 3px solid red";
   document.getElementById('algFl').style="outline: 3px solid red";
   }
+  }
   else if ( hours >= 9 && minutes >= 0) {
   document.write("Перемена (5 мин)");
+  if (wn == 1) {
   document.getElementById('ksTu').style="outline: 3px solid orange";
   document.getElementById('itWeu').style="outline: 3px solid orange";
   document.getElementById('ksThu').style="outline: 3px solid orange";
   document.getElementById('algFu').style="outline: 3px solid orange";
+  }
+  else if (wn == 0) {
   document.getElementById('ksTl').style="outline: 3px solid orange";
   document.getElementById('itWl').style="outline: 3px solid orange";
   document.getElementById('algThl').style="outline: 3px solid orange";
   document.getElementById('algFl').style="outline: 3px solid orange";
   }
+  }
   else if ( hours >= 8 && minutes >= 15) {
   document.write("Сейчас идёт 1 пара (1 час)");
+  if (wn == 1) {
   document.getElementById('ksTu').style="outline: 3px solid red";
   document.getElementById('itWeu').style="outline: 3px solid red";
   document.getElementById('ksThu').style="outline: 3px solid red";
   document.getElementById('algFu').style="outline: 3px solid red";
+  }
+  else if (wn == 0) {
   document.getElementById('ksTl').style="outline: 3px solid red";
   document.getElementById('itWl').style="outline: 3px solid red";
   document.getElementById('algThl').style="outline: 3px solid red";
   document.getElementById('algFl').style="outline: 3px solid red";
+  }
   }
  }
 
@@ -327,55 +401,79 @@ if (n == 2 || n == 3 || n == 4 || n == 5) {
     document.write("Перемена (10 мин)")
     else if ( hours >= 12 && minutes >= 10) {
     document.write("Сейчас идёт 3 пара (2 час)");
+    if (wn == 0)
     document.getElementById('archSl').style="outline: 3px solid red";
+    else if (wn == 1)
     document.getElementById('archSu').style="outline: 3px solid red";
     }
     else if ( hours >= 12 && minutes >= 5) {
     document.write("Перемена (5 мин)");
+    if (wn == 0)
     document.getElementById('archSl2').style="outline: 3px solid orange";
+    else if (wn == 1)
     document.getElementById('archSu2').style="outline: 3px solid orange";
     }
     else if ( hours >= 11 && minutes >= 25) {
     document.write("Сейчас идёт 3 пара (1 час)");
+    if (wn == 0)
     document.getElementById('archSl2').style="outline: 3px solid red";
+    else if (wn == 1)
     document.getElementById('archSu2').style="outline: 3px solid red";
     }
     else if ( hours >= 11 && minutes >= 15) {
     document.write("Перемена (10 мин)");
+    if (wn == 0)
     document.getElementById('archSl2').style="outline: 3px solid yellow";
+    else if (wn == 1)
     document.getElementById('archSu2').style="outline: 3px solid yellow";
     }
     else if ( hours >= 10 && minutes >= 35) {
     document.write("Сейчас идёт 2 пара (2 час)");
+    if (wn == 0)
     document.getElementById('archSl').style="outline: 3px solid red";
+    else if (wn == 1)
     document.getElementById('archSu').style="outline: 3px solid red";
     }
     else if ( hours >= 10 && minutes >= 30) {
     document.write("Перемена (5 мин)");
+    if (wn == 0)
     document.getElementById('archSl').style="outline: 3px solid orange";
+    else  if (wn == 1)
     document.getElementById('archSu').style="outline: 3px solid orange";
     }
     else if ( hours >= 9 && minutes >= 50) {
     document.write("Сейчас идёт 2 пара (1 час)"); 
+    if (wn == 0)
     document.getElementById('archSl').style="outline: 3px solid red";
+    else if (wn == 1)
     document.getElementById('archSu').style="outline: 3px solid red";
     }
     else if ( hours >= 9 && minutes >= 40) {
     document.write("Перемена (10 мин)");
+    if (wn == 0)
     document.getElementById('archSl').style="outline: 3px solid yellow";
+    else  if (wn == 1)
     document.getElementById('archSu').style="outline: 3px solid yellow";
     }
     else if ( hours >= 9 && minutes >= 0) {
     document.write("Сейчас идёт 1 пара (2 час)");
+    if (wn == 0)
     document.getElementById('anglSl').style="outline: 3px solid red";
+    else  if (wn == 1)
     document.getElementById('anglSu').style="outline: 3px solid red";
     }
     else if ( hours >= 8 && minutes >= 55) {
     document.write("Перемена (5 мин)");
+    if (wn == 0)
+    document.getElementById('anglSl').style="outline: 3px solid orange";
+    else  if (wn == 1)
     document.getElementById('anglSu').style="outline: 3px solid orange";
     }
     else if ( hours >= 8 && minutes >= 15) {
     document.write("Сейчас идёт 1 пара (1 час)");
+    if (wn == 0)
+    document.getElementById('anglSl').style="outline: 3px solid red";
+    else  if (wn == 1)
     document.getElementById('anglSu').style="outline: 3px solid red";
     }
    }
