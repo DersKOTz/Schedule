@@ -235,9 +235,7 @@ var d=new Date();
       document.write("Сейчас идёт 1 пара (1 час)"); 
       document.getElementById('fizraMl').style="outline: 3px solid red";
       document.getElementById('fizraMu').style="outline: 3px solid red";
-      }
-      else if ( hours >= 1 && minutes >= 0)
-      document.write("Пары начнутся в 8:50");
+      } 
      }
   
      // сб
