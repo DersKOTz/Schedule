@@ -341,7 +341,7 @@ if (n == 2 || n == 3 || n == 4 || n == 5) {
   document.write("Перемена (5 мин)");
   if (wn == 1) {
     if( n == 2 )
-  document.getElementById('discmatTu').style="outline: 3px solid orange";
+  document.getElementById('discMatTu').style="outline: 3px solid orange";
   else  if( n == 3 )
   document.getElementById('sstdWeu').style="outline: 3px solid orange";
   else  if( n == 4 )
