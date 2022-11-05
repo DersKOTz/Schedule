@@ -494,9 +494,9 @@ if (n == 2 || n == 3 || n == 4 || n == 5) {
     else if ( hours >= 12 && minutes >= 10) {
     document.write("Сейчас идёт 3 пара (2 час)");
     if (wn == 0)
-    document.getElementById('archSl').style="outline: 3px solid red";
+    document.getElementById('archSl2').style="outline: 3px solid red";
     else if (wn == 1)
-    document.getElementById('archSu').style="outline: 3px solid red";
+    document.getElementById('archSu2').style="outline: 3px solid red";
     }
     else if ( hours >= 12 && minutes >= 5) {
     document.write("Перемена (5 мин)");
